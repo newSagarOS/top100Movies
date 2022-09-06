@@ -17,9 +17,7 @@ movie_titles = [movie.text for movie in movies]
 
 top_movies = movie_titles[::-1]
 
-with open("top_movies2.txt", mode='w') as file:
+# print(top_movies[58])
+with open("top_movies.txt", mode='w', encoding='utf-8') as file:
     for mov in top_movies:
-        if mov.startswith('59'):
-            pass
-        else:
-            file.write(f'{mov}\n')
+        file.write(f'{mov}\n')
